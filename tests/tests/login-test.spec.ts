@@ -8,7 +8,7 @@ test.describe('Login tests', () => {
     test('Check invalid credentials', async ({ basePage, loginPage }) => {
         await loginPage.visitLoginpage()
         await loginPage.clickOnLoginButton()
-        await loginPage.userLogin('testuser1', 'AZA!@1123asda')
+        await loginPage.userLogin('testuser12', 'AZA!@1123asda')
         //checking if error message is visisble
         const error = await basePage.verfiyErrorVisible(
             loginPageErrors.invalidCreadentials
