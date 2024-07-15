@@ -14,9 +14,11 @@ export class StorePage {
 
     async visitStorePage() {
         await this.page.goto('/stores')
+        
     }
 
     async clickOnCollectionItem(itemName: string) {
+        await this.collectionItems('All').click()
         await this.collectionItems(itemName).click()
         await this.resultsText().waitFor({ state: 'visible' })
     }

@@ -28,7 +28,5 @@
         "typescript-eslint": "^7.16.0",
         "@api/mintology": "file:.api/apis/mintology"
     },
-    "dependencies": {
-       
-    }
+    "dependencies": {}
 }
