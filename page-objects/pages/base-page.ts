@@ -1,21 +1,20 @@
-import { Page } from "@playwright/test";
-import { loginPageErros } from "test-data/error-messages";
+import { Page } from '@playwright/test'
+import { loginPageErros } from 'test-data/error-messages'
 
 export class BasePage {
-    page :Page
-    constructor(page:Page){
+    page: Page
+    constructor(page: Page) {
         this.page = page
     }
 
     errorText = (errorMessage: string) => this.page.getByText(errorMessage)
 
-    async verfiyErrorVisible(errorMessage) : Promise<boolean>{
-     await this.errorText(errorMessage).waitFor({state:'visible'})
-     return   await  this.errorText(errorMessage).isVisible()
+    async verfiyErrorVisible(errorMessage): Promise<boolean> {
+        await this.errorText(errorMessage).waitFor({ state: 'visible' })
+        return await this.errorText(errorMessage).isVisible()
     }
 
-    async wait(){
+    async wait() {
         await this.page.waitForTimeout(3000)
     }
-
 }

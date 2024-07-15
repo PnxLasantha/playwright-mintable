@@ -8,10 +8,9 @@ type Pages = {
     storepage: StorePage
     loginPage: LoginPage
     homepage: HomePage
-    basePage : BasePage
+    basePage: BasePage
 }
 const testFixture = basetest.extend<Pages>({
-
     basePage: async ({ page }, use) => {
         await use(new BasePage(page))
     },

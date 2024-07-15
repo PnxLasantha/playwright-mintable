@@ -3,8 +3,8 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     plugins: ['@typescript-eslint'],
     root: true,
-    rules : { "@typescript-eslint/no-floating-promises": "error"},
-  parserOptions: {
-      "project": "./tsconfig.json" // Path to your tsconfig.json file
-    }
-  };
+    rules: { '@typescript-eslint/no-floating-promises': 'error' },
+    parserOptions: {
+        project: './tsconfig.json', // Path to your tsconfig.json file
+    },
+}

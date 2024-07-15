@@ -11,7 +11,7 @@ test.describe('Wallet Actions', () => {
     test('Autorize wallet token', async () => {
         mintology.auth(`${process.env.AUTH_CODE}`)
         mintology.server(`${process.env.MINTOLOGY_DEV_SERVER}`)
-        
+
         let wallertAddress: string
         let token: string
 

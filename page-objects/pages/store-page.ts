@@ -6,7 +6,6 @@ export class StorePage {
     constructor(page: Page) {
         this.page = page
     }
-    
 
     collectionItems = (itemName: string) =>
         this.page.getByTestId(`multitoggle-${itemName}`)
@@ -25,6 +24,6 @@ export class StorePage {
     async verifyBrokenImageLinks() {
         const getImageLinks = await this.imageLinks().all()
         const checkImages = new ApiHelper(this.page)
-      await  checkImages.checkBrokenImageLinks(getImageLinks)
+        await checkImages.checkBrokenImageLinks(getImageLinks)
     }
 }
