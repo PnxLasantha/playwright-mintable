@@ -1,18 +1,33 @@
 {
-  "name": "playwright-mintable",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@mintology/mintology": "^0.0.5",
-    "@playwright/test": "^1.45.1",
-    "@types/node": "^20.14.10"
-  },
-  "dependencies": {
-    "@api/mintology": "file:.api/apis/mintology"
-  }
+    "name": "playwright-mintable",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test",
+        "format": "npx prettier . --write",
+        "prepare": "husky",
+        "lint": "npx eslint .",
+        "lint:fix": "npx eslint --fix ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@eslint/js": "^9.7.0",
+        "@mintology/mintology": "^0.0.5",
+        "@playwright/test": "^1.45.1",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^20.14.10",
+        "dotenv": "^16.4.5",
+        "eslint": "^8.57.0",
+        "husky": "^9.0.11",
+        "prettier": "^3.3.3",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.3",
+        "typescript-eslint": "^7.16.0"
+    },
+    "dependencies": {
+        "@api/mintology": "file:.api/apis/mintology"
+    }
 }

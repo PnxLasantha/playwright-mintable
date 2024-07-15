@@ -1,11 +1,11 @@
 {
-  "version": "1.0",
-  "apis": [
-    {
-      "identifier": "mintology",
-      "source": "@mintology/v1.0#svgkfsz1clyhl3w6r",
-      "integrity": "sha512-Ar4mY2RC8lIIQS+AMa57+4aEouMp5bS1kXnHMI7H6s2rp+GYoEnYEyRAszo6FfgxCenP82fjUGoHxpNMFIjhpQ==",
-      "installerVersion": "6.1.2"
-    }
-  ]
+    "version": "1.0",
+    "apis": [
+        {
+            "identifier": "mintology",
+            "source": "@mintology/v1.0#svgkfsz1clyhl3w6r",
+            "integrity": "sha512-Ar4mY2RC8lIIQS+AMa57+4aEouMp5bS1kXnHMI7H6s2rp+GYoEnYEyRAszo6FfgxCenP82fjUGoHxpNMFIjhpQ==",
+            "installerVersion": "6.1.2"
+        }
+    ]
 }
