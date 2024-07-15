@@ -14,7 +14,6 @@ export class StorePage {
 
     async visitStorePage() {
         await this.page.goto('/stores')
-        
     }
 
     async clickOnCollectionItem(itemName: string) {
