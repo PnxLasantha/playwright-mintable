@@ -2,7 +2,7 @@ import { test as basetest } from '@playwright/test'
 import { StorePage } from '../pages/store-page'
 import { LoginPage } from '../pages/login-page'
 import { HomePage } from '../pages/home-page'
-import { BasePage } from 'page-objects/pages/base-page'
+import { BasePage } from 'tests/page-objects/pages/base-page'
 
 type Pages = {
     storepage: StorePage

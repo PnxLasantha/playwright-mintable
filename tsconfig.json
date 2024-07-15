@@ -106,7 +106,7 @@
         // "skipDefaultLibCheck": true,
         "baseUrl": ".",
         "paths": {
-            "@fixture/*": ["page-objects/fixtures/*"]
+            "@fixture/*": ["tests/page-objects/fixtures/*"]
         } /* Skip type checking .d.ts files that are included with TypeScript. */,
         "skipLibCheck": true /* Skip type checking all .d.ts files. */
     }

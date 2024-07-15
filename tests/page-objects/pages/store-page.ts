@@ -1,5 +1,5 @@
 import { Page } from '@playwright/test'
-import { ApiHelper } from '../../api-util/api-helper'
+import { ApiHelper } from '../../../api-util/api-helper'
 
 export class StorePage {
     page: Page
