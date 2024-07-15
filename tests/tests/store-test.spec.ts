@@ -1,7 +1,7 @@
 import { test } from 'tests/page-objects/fixtures/fixture'
 
 test.describe('Store page tests', () => {
-    test.only('Verify broken image links', async ({ storepage }) => {
+    test('Verify broken image links', async ({ storepage }) => {
         //add a different timeout since the page are slow
         test.setTimeout(120000)
         await storepage.visitStorePage()
