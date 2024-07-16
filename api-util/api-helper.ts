@@ -9,7 +9,7 @@ export class ApiHelper {
     private async checkImageLinkStatus(src: string) {
         const req = await request.newContext()
         const responce = await req.get(src)
-        expect(responce.status()).toEqual(200)
+        expect.soft(responce.status(),`Broken Link ${src}` ).toEqual(200)
     }
 
     private async getImageSrc(imageLink: Locator) {
